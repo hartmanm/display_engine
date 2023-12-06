@@ -1,0 +1,14 @@
+{
+"_8A":"black_rook",
+"_8B":"black_knight",
+"_8C":"black_bishop",
+"_8D":"black_queen",
+"_8E":"black_king",
+"_7A":"black_pawn",
+"_2H":"white_pawn",
+"_1A":"white_rook",
+"_1B":"white_knight",
+"_1C":"white_bishop",
+"_1D":"white_queen",
+"_1E":"white_king"
+}
