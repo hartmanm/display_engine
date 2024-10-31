@@ -91,8 +91,8 @@ var screen_width = Math.max(document.documentElement.clientWidth, window.innerWi
 var screen_height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 var resolution=screen_width*screen_height
 console.log("resolution: " + resolution);
-var w=22
-var h=22
+var w=16
+var h=16
 var grid_wide=Math.floor(parseInt((screen_width/w)));
 var grid_long=Math.floor(parseInt((screen_height/h)));
 var current_area=grid_wide*w*grid_long*h
@@ -218,8 +218,8 @@ console.log("--------------------");
 console.log("execute_z: " + id);
 var new_lambda_background_color = "#4E2F98"; //#0F6640 green //#660F35 red // #4E2F98 purple
 var image_name_inner_html=inner_html[id];
-const contains_png = key.includes(".png");
-const contains_jp = key.includes(".jp");
+const contains_png = image_name_inner_html.includes(".png");
+const contains_jp = image_name_inner_html.includes(".jp");
 var here = image_name_inner_html.indexOf("src=");
 var there=here;
 if(contains_jp){there=image_name_inner_html.indexOf(".jpg");}
