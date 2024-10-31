@@ -7,7 +7,6 @@ https://github.com/hartmanm
 var base = document.getElementById("base");
 var inner_html = {}
 var image_selector=[]
-var use_default_triggered=false;
 function execute_z(){
 var temp = inner_html;
 var base = document.getElementById(div_base_id);
@@ -193,8 +192,7 @@ lamdalink.addEventListener("click", function(e){var target = e.target || e.srcEl
 }
 lamda_gen("init");
 }
-if(use_default && not use_default_triggered){
-use_default_triggered=true;
+if(use_default){
 for(var key of images_list){
 const contains_png = key.includes("png");
 const contains_jp = key.includes("jp");
