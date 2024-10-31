@@ -4,11 +4,12 @@ mnh_license@proton.me
 https://github.com/hartmanm
 `
 const images_list = [
-'png',
+'',
 'https://hartmanm.github.io/static/project_timeline/hartmanm_avatar.png',
+  
 'https://hartmanm.github.io/static/data_aggregator/instock.png',
 'https://hartmanm.github.io/static/data_aggregator/outofstock.png',
-
+  
 'https://hartmanm.github.io/static/electric_cost_calculator/ecc.png',
 
 'https://hartmanm.github.io/static/openrig/rig_list_1x_rig.png',
@@ -41,10 +42,6 @@ const images_list = [
 'https://hartmanm.github.io/static/overlord/win10guide/w26.png',
 'https://hartmanm.github.io/static/overlord/win10guide/w27.png',
 'https://hartmanm.github.io/static/overlord/win10guide/w28.png',
-'https://hartmanm.github.io/static/overlord/etc.png',
-'https://hartmanm.github.io/static/overlord/eth.png',
-'https://hartmanm.github.io/static/overlord/rvn.png',
-'https://hartmanm.github.io/static/overlord/xmr.png',
 
 'https://hartmanm.github.io/static/pavo_td/arrow.png',
 'https://hartmanm.github.io/static/pavo_td/arrow1.png',
@@ -83,9 +80,4 @@ const images_list = [
 'https://hartmanm.github.io/static/simpleB/simpleBv2.png',
 
 'https://hartmanm.github.io/static/ticker/bitcoin.png',
-'https://hartmanm.github.io/static/ticker/ether.png',
-'https://hartmanm.github.io/static/ticker/etherclassic.png',
-'https://hartmanm.github.io/static/ticker/litecoin.png',
-'https://hartmanm.github.io/static/ticker/monero.png',
-'https://hartmanm.github.io/static/ticker/rvn.png'
 ]
