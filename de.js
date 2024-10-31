@@ -167,7 +167,22 @@ console.log("grid_wide: " + grid_wide);
 console.log("total_grid_squares: " + total_grid_squares);
 var count = Object.keys(inner_html).length;
 console.log("number of inner_html keys: " + count);
-function lamda_gen(type){var key;for(key in inner_html){if(type == "init"){lamda_link('base',inner_html[key],key,key);}}}
+function lamda_gen(type){
+var key;
+for(key in inner_html){
+const contains_png = key.includes(".png");
+const contains_jp = key.includes(".jp");
+const contains_xyz=(contains_png || contains_jp);
+const contains_cons = key.includes("cons");
+const contains_undefined = key.includes("undefined");
+const contains_error=(contains_cons || contains_undefined);
+if(key != ""){
+if(contains_xyz && !contains_error){
+if(type == "init"){lamda_link('base',inner_html[key],key,key);}
+}
+}
+}
+}
 function hover(id){
 var out2 = document.getElementById(id);
 out2.style = "outline-style: solid; outline-color: #CBD3EE; cursor: pointer;";
