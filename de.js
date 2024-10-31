@@ -59,7 +59,10 @@ for(var key of temp){
 const contains_png = key.includes("png");
 const contains_jp = key.includes("jp");
 const contains_xyz=(contains_png || contains_jp);
-if(key != ""){if(contains_xyz){image_selector.push(key);console.log(key);}}};
+const contains_const key.includes("const");
+const contains_undefined key.includes("undefined");
+const contains_error=(contains_const || contains_undefined);
+if(key != ""){if(contains_xyz && !contains_error){image_selector.push(key);console.log(key);}}};
 console.log(base.innerHTML);
 reload();
 };
