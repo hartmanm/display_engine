@@ -168,6 +168,7 @@ var inner__html='<img src=' + image_name + ' style="width:' + start_lambda_size 
 if(image_selector[new_img] === undefined){
 var inner__html='<img src=' + 'https://hartmanm.github.io/static/pavo_td/path.png' + ' style="width:' + start_lambda_size + ';height:' + start_lambda_size + '; background-color: ' + start_lambda_background_color + ';"/>'
 }
+}
 var new_key=i;
 var image=inner__html;
 inner_html[new_key]=image;
