@@ -75,9 +75,5 @@ const images_list = [
 'https://hartmanm.github.io/static/resume_site/openrig.png',
 'https://hartmanm.github.io/static/resume_site/polar.png',
 'https://hartmanm.github.io/static/resume_site/riglist.png',
-'https://hartmanm.github.io/static/resume_site/wasm_go.png',
-
-'https://hartmanm.github.io/static/simpleB/simpleBv2.png',
-
-'https://hartmanm.github.io/static/ticker/bitcoin.png',
+'https://hartmanm.github.io/static/resume_site/wasm_go.png'
 ]
