@@ -23,8 +23,8 @@ image_selector=[]
 inner_html = {}
 execute_z();
 for(var key of images_list){
-const contains_png = key.includes("png");
-const contains_jp = key.includes("jp");
+const contains_png = key.includes(".png");
+const contains_jp = key.includes(".jp");
 const contains_xyz=(contains_png || contains_jp);
 const contains_cons = key.includes("cons");
 const contains_undefined = key.includes("undefined");
@@ -48,8 +48,8 @@ image_selector=[]
 inner_html = {}
 execute_z();
 for(var key of temp){
-const contains_png = key.includes("png");
-const contains_jp = key.includes("jp");
+const contains_png = key.includes(".png");
+const contains_jp = key.includes(".jp");
 const contains_xyz=(contains_png || contains_jp);
 const contains_cons = key.includes("cons");
 const contains_undefined = key.includes("undefined");
