@@ -13,7 +13,6 @@ const images_list = [
 'https://hartmanm.github.io/static/electric_cost_calculator/ecc.png',
 
 'https://hartmanm.github.io/static/openrig/rig_list_1x_rig.png',
-'https://hartmanm.github.io/static/openrig/rig_list_1x_rig_with_open_console.png',
 
 'https://hartmanm.github.io/static/overlord/win10guide/w1.png',
 'https://hartmanm.github.io/static/overlord/win10guide/w2.png',
