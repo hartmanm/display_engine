@@ -4,6 +4,7 @@ mnh_license@proton.me
 https://github.com/hartmanm
 `
 const images_list = [
+'png',
 'https://hartmanm.github.io/static/project_timeline/hartmanm_avatar.png',
 'https://hartmanm.github.io/static/data_aggregator/instock.png',
 'https://hartmanm.github.io/static/data_aggregator/outofstock.png',
