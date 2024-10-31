@@ -152,27 +152,24 @@ return result;
 //total_grid_squares=400
 total_grid_squares=image_selector.length;
 for(var i=0;i<total_grid_squares;i++){
-var new_img=i;
 var start_lambda_background_color=lambda_background_color;
 var start_lambda_size=lambda_size;
-if(image_selector[new_img] != ""){
-if(image_selector[new_img] !== undefined){
-const contains_png = image_selector[new_img].includes(".png");
-const contains_jp = image_selector[new_img].includes(".jp");
+//if(image_selector[i] != ""){
+var image="";
+if(image_selector[i] !== undefined){
+const contains_png = image_selector[i].includes(".png");
+const contains_jp = image_selector[i].includes(".jp");
 const contains_xyz=(contains_png || contains_jp);
-const contains_cons = image_selector[new_img].includes("cons");
-const contains_undefined = image_selector[new_img].includes("undefined");
+const contains_cons = image_selector[i].includes("cons");
+const contains_undefined = image_selector[i].includes("undefined");
 const contains_error=(contains_cons || contains_undefined);
-var image_name=image_selector[new_img];
-var inner__html='<img src=' + image_name + ' style="width:' + start_lambda_size + ';height:' + start_lambda_size + '; background-color: ' + start_lambda_background_color + ';"/>'
+var image_name=image_selector[i];
+var image='<img src=' + image_name + ' style="width:' + start_lambda_size + ';height:' + start_lambda_size + '; background-color: ' + start_lambda_background_color + ';"/>'
 }
-if(image_selector[new_img] === undefined){
-var inner__html='<img src=' + 'https://hartmanm.github.io/static/pavo_td/path.png' + ' style="width:' + start_lambda_size + ';height:' + start_lambda_size + '; background-color: ' + start_lambda_background_color + ';"/>'
+if(image_selector[i] === undefined){
+var image='<img src=' + 'https://hartmanm.github.io/static/pavo_td/path.png' + ' style="width:' + start_lambda_size + ';height:' + start_lambda_size + '; background-color: ' + start_lambda_background_color + ';"/>'
 }
-}
-var new_key=i;
-var image=inner__html;
-inner_html[new_key]=image;
+inner_html[i]=image;
 }
 console.log("lambda_size: " + lambda_size);
 console.log("screen_width: " + screen_width);
