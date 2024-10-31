@@ -222,8 +222,9 @@ const contains_png = image_name_inner_html.includes(".png");
 const contains_jp = image_name_inner_html.includes(".jp");
 var here = image_name_inner_html.indexOf("src=");
 var there=here;
-if(contains_jp){there=image_name_inner_html.indexOf(".jpg");}
-if(contains_png){there=image_name_inner_html.indexOf(".png");}
+var extension="";
+if(contains_jp){extension=".jpg";there=image_name_inner_html.indexOf(".jpg");}
+if(contains_png){extension=".png";there=image_name_inner_html.indexOf(".png");}
 var image_name = image_name_inner_html.slice(here,there);
 var here = image_name_inner_html.indexOf("width:");
 var there = image_name_inner_html.indexOf(";height");
@@ -236,7 +237,7 @@ new_lambda_size=new_lambda_size + "px";}
 else{
 new_lambda_size=lambda_size;
 new_lambda_size.toString(10);}
-inner_html[id]='<img ' + image_name + ' style="width:' + new_lambda_size + ';height:' + new_lambda_size + '; background-color: ' + new_lambda_background_color + ';"/>'
+inner_html[id]='<img ' + image_name + extension + ' style="width:' + new_lambda_size + ';height:' + new_lambda_size + '; background-color: ' + new_lambda_background_color + ';"/>'
 var temp = inner_html;
 var base = document.getElementById("base");
 base.innerHTML="";
