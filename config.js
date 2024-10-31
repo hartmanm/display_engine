@@ -42,7 +42,6 @@ const images_list = [
 
 'https://hartmanm.github.io/static/pavo_td/arrow.png',
 'https://hartmanm.github.io/static/pavo_td/arrow1.png',
-'https://hartmanm.github.io/static/pavo_td/arrow3.png',
 'https://hartmanm.github.io/static/pavo_td/arrow3large.png',
 'https://hartmanm.github.io/static/pavo_td/bomb_32p.png',
 'https://hartmanm.github.io/static/pavo_td/bomb_64p.png',
