@@ -180,21 +180,21 @@ var count = Object.keys(inner_html).length;
 console.log("number of inner_html keys: " + count);
 function lamda_gen(type){
 for(var key in inner_html){
-if(key != ""){
+//if(key != ""){
 //console.log("lamda_gen() key: " + key);
-console.log("lamda_gen()  inner_html[key]: " + inner_html[key]);
-const contains_png = inner_html[key].includes(".png");
-const contains_jp = inner_html[key].includes(".jp");
-const contains_xyz=(contains_png || contains_jp);
-const contains_cons = inner_html[key].includes("cons");
-const contains_undefined = inner_html[key].includes("undefined");
-const contains_error=(contains_cons || contains_undefined);
-if(inner_html[key] != ""){
-if(contains_xyz && !contains_error){
+//console.log("lamda_gen()  inner_html[key]: " + inner_html[key]);
+//const contains_png = inner_html[key].includes(".png");
+//const contains_jp = inner_html[key].includes(".jp");
+//const contains_xyz=(contains_png || contains_jp);
+//const contains_cons = inner_html[key].includes("cons");
+//const contains_undefined = inner_html[key].includes("undefined");
+//const contains_error=(contains_cons || contains_undefined);
+//if(inner_html[key] != ""){
+//if(contains_xyz && !contains_error){
 if(type == "init"){lamda_link('base',inner_html[key],key,key);}
-}
-}
-}
+//}
+//}
+//}
 }
 }
 function hover(id){
