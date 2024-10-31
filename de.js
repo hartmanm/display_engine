@@ -44,6 +44,7 @@ reader.onload = function () {
 //document.getElementById('file_reader_out').innerHTML = reader.result;
 //var temp = document.getElementById('file_reader_out').innerHTML
 var temp = reader.result.split(',');
+var temp2 =[];
 image_selector=[]
 inner_html = {}
 execute_z();
@@ -54,7 +55,14 @@ const contains_xyz=(contains_png || contains_jp);
 const contains_cons = key.includes("cons");
 const contains_undefined = key.includes("undefined");
 const contains_error=(contains_cons || contains_undefined);
-if(key != ""){if(contains_xyz && !contains_error){image_selector.push(key);console.log(key);}}};
+if(key != ""){if(contains_xyz && !contains_error){
+temp2.push(key);console.log(key);
+}
+}
+};
+for(var key of temp2){
+image_selector.push(key);console.log(key);
+};
 console.log(base.innerHTML);
 reload();
 };
