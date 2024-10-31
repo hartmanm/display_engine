@@ -12,8 +12,6 @@ const images_list = [
   
 'https://hartmanm.github.io/static/electric_cost_calculator/ecc.png',
 
-'https://hartmanm.github.io/static/openrig/rig_list_1x_rig.png',
-
 'https://hartmanm.github.io/static/overlord/win10guide/w1.png',
 'https://hartmanm.github.io/static/overlord/win10guide/w2.png',
 'https://hartmanm.github.io/static/overlord/win10guide/w3.png',
@@ -44,7 +42,6 @@ const images_list = [
 
 'https://hartmanm.github.io/static/pavo_td/arrow.png',
 'https://hartmanm.github.io/static/pavo_td/arrow1.png',
-'https://hartmanm.github.io/static/pavo_td/arrow2.png',
 'https://hartmanm.github.io/static/pavo_td/arrow3.png',
 'https://hartmanm.github.io/static/pavo_td/arrow3large.png',
 'https://hartmanm.github.io/static/pavo_td/bomb_32p.png',
