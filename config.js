@@ -57,7 +57,6 @@ const images_list = [
 'https://hartmanm.github.io/static/pavo_td/sheep_walk.png',
 
 'https://hartmanm.github.io/static/project_timeline/hartmanm_avatar.png',
-'https://hartmanm.github.io/static/project_timeline/hs_server.png',
 
 'https://hartmanm.github.io/static/resume_site/d3_road_deaths.png',
 'https://hartmanm.github.io/static/resume_site/hs_server.png',
