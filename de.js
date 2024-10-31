@@ -19,13 +19,16 @@ var fileInput = document.getElementById("csv"),
 readFile = function () {
 var reader = new FileReader();
 reader.onload = function () {
-document.getElementById('file_reader_out').innerHTML = reader.result;
-var temp = document.getElementById('file_reader_out').innerHTML
-var temp = temp.split(',');
+//document.getElementById('file_reader_out').innerHTML = reader.result;
+//var temp = document.getElementById('file_reader_out').innerHTML
+var temp = reader.result.split(',');
 image_selector=[]
 inner_html = {}
 execute_z();
-for(var key of temp){if(key != ""){image_selector.push(key);console.log(key);}};
+const contains_png = str.includes("png");
+const contains_jp = str.includes("jp");
+const contains_xyz=(contains_png || contains_jp);
+if(key != ""){if(contains_xyz){image_selector.push(key);console.log(key);}}};
 console.log(base.innerHTML);
 reload();
 };
@@ -36,15 +39,19 @@ var fileInput_json = document.getElementById("json"),
 readFile2 = function () {
 var reader = new FileReader();
 reader.onload = function () {
-document.getElementById('file_reader_out').innerHTML = reader.result;
-var temp = document.getElementById('file_reader_out').innerHTML
-var map = temp;
+//document.getElementById('file_reader_out').innerHTML = reader.result;
+//var temp = document.getElementById('file_reader_out').innerHTML
+var map = reader.result;
 execute_z();
 image_selector=[]
 inner_html = {}
 console.log(map);
 var jsonobj = JSON.parse(map);
-for(var key in jsonobj){if(key != ""){image_selector.push(jsonobj[key]);console.log(jsonobj[key]);}};
+for(var key in jsonobj){
+const contains_png = str.includes("png");
+const contains_jp = str.includes("jp");
+const contains_xyz=(contains_png || contains_jp);
+if(key != ""){if(contains_xyz){image_selector.push(jsonobj[key]);console.log(jsonobj[key]);}}};
 reload();
 };
 reader.readAsBinaryString(fileInput_json.files[0]);
