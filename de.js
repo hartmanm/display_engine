@@ -25,11 +25,12 @@ console.log(base.innerHTML);
 reload();
 }
 */
-var fileInput = images_list,
-readFileD = function () {
-var reader = new FileReader();
-reader.onload = function () {
-var temp = reader.result.split(',');
+//var fileInput = images_list,
+//readFileD = function () {
+//var reader = new FileReader();
+//reader.onload = function () {
+if(use_default){
+var temp = images_list.split(',');
 image_selector=[]
 inner_html = {}
 execute_z();
@@ -41,9 +42,9 @@ if(key != ""){if(contains_xyz){image_selector.push(key);console.log(key);}}};
 console.log(base.innerHTML);
 reload();
 };
-reader.readAsBinaryString(fileInput_config.files[0]);
-};
-fileInput_config.addEventListener('change', readFileD);
+//reader.readAsBinaryString(fileInput_config.files[0]);
+//};
+//fileInput_config.addEventListener('change', readFileD);
 
 var fileInput = document.getElementById("csv"),
 readFile = function () {
