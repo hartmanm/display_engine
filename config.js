@@ -4,6 +4,7 @@ mnh_license@proton.me
 https://github.com/hartmanm
 `
 const images_list = [
+'https://hartmanm.github.io/static/project_timeline/hartmanm_avatar.png',
 'https://hartmanm.github.io/static/data_aggregator/instock.png',
 'https://hartmanm.github.io/static/data_aggregator/outofstock.png',
 
@@ -51,26 +52,16 @@ const images_list = [
 'https://hartmanm.github.io/static/pavo_td/arrow3large.png',
 'https://hartmanm.github.io/static/pavo_td/bomb_32p.png',
 'https://hartmanm.github.io/static/pavo_td/bomb_64p.png',
-'https://hartmanm.github.io/static/pavo_td/bomb_bullet.png',
 'https://hartmanm.github.io/static/pavo_td/bomb_launcher.png',
 'https://hartmanm.github.io/static/pavo_td/bruiser.png',
-'https://hartmanm.github.io/static/pavo_td/bruiser2.png',
 'https://hartmanm.github.io/static/pavo_td/explosion.png',
 'https://hartmanm.github.io/static/pavo_td/explosion1.png',
 'https://hartmanm.github.io/static/pavo_td/explosion2.png',
 'https://hartmanm.github.io/static/pavo_td/explosion_transparent.png',
 'https://hartmanm.github.io/static/pavo_td/fire.png',
 'https://hartmanm.github.io/static/pavo_td/levelThree.png',
-'https://hartmanm.github.io/static/pavo_td/logo.png',
-'https://hartmanm.github.io/static/pavo_td/logo2.png',
-'https://hartmanm.github.io/static/pavo_td/logo3.png',
-'https://hartmanm.github.io/static/pavo_td/logo4.png',
 'https://hartmanm.github.io/static/pavo_td/nonPath.png',
 'https://hartmanm.github.io/static/pavo_td/path.png',
-'https://hartmanm.github.io/static/pavo_td/scout.png',
-'https://hartmanm.github.io/static/pavo_td/scout2.png',
-'https://hartmanm.github.io/static/pavo_td/sheep.png',
-'https://hartmanm.github.io/static/pavo_td/sheep3.png',
 'https://hartmanm.github.io/static/pavo_td/sheep_walk.png',
 
 'https://hartmanm.github.io/static/project_timeline/hartmanm_avatar.png',
