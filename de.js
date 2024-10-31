@@ -246,6 +246,7 @@ new_lambda_size=lambda_size;
 new_lambda_size.toString(10);
 }
 inner_html[id]='<img ' + image_name + extension + ' style="width:' + new_lambda_size + ';height:' + new_lambda_size + '; background-color: ' + new_lambda_background_color + ';"/>'
+console.log("!inner_html[id]: " + inner_html[id]);
 var temp = inner_html;
 var base = document.getElementById("base");
 base.innerHTML="";
