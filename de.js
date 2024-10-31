@@ -14,27 +14,15 @@ base.innerHTML="";
 inner_html={}
 inner_html=temp;
 }
-  /*
-if(use_default){
-for(var key of images_list){
-const contains_png = key.includes("png");
-const contains_jp = key.includes("jp");
-const contains_xyz=(contains_png || contains_jp);
-if(key != ""){if(contains_xyz){image_selector.push(key);console.log(key);}}};
-console.log(base.innerHTML);
-reload();
-}
-*/
 //var fileInput = images_list,
 //readFileD = function () {
 //var reader = new FileReader();
 //reader.onload = function () {
 if(use_default){
-var temp = images_list.split(',');
 image_selector=[]
 inner_html = {}
 execute_z();
-for(var key of temp){
+for(var key of images_list){
 const contains_png = key.includes("png");
 const contains_jp = key.includes("jp");
 const contains_xyz=(contains_png || contains_jp);
