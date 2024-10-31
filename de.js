@@ -170,6 +170,7 @@ console.log("number of inner_html keys: " + count);
 function lamda_gen(type){
 var key;
 for(key in inner_html){
+console.log("lamda_gen() key: " + key);
 const contains_png = key.includes(".png");
 const contains_jp = key.includes(".jp");
 const contains_xyz=(contains_png || contains_jp);
