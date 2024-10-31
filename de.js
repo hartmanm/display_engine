@@ -168,9 +168,10 @@ console.log("total_grid_squares: " + total_grid_squares);
 var count = Object.keys(inner_html).length;
 console.log("number of inner_html keys: " + count);
 function lamda_gen(type){
-var key;
-for(key in inner_html){
+//var key;
+for(var key in inner_html){
 console.log("lamda_gen() key: " + key);
+console.log("lamda_gen()  inner_html[key]: " + inner_html[key]);
 const contains_png = key.includes(".png");
 const contains_jp = key.includes(".jp");
 const contains_xyz=(contains_png || contains_jp);
