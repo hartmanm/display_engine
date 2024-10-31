@@ -28,7 +28,7 @@ execute_z();
 const contains_png = str.includes("png");
 const contains_jp = str.includes("jp");
 const contains_xyz=(contains_png || contains_jp);
-if(key != ""){if(contains_xyz){image_selector.push(key);console.log(key);}}};
+for(var key of temp){if(key != ""){if(contains_xyz){image_selector.push(key);console.log(key);}}};
 console.log(base.innerHTML);
 reload();
 };
