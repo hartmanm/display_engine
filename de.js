@@ -129,7 +129,7 @@ var start_lambda_background_color=lambda_background_color;
 var start_lambda_size=lambda_size;
 var image_name=image_selector[new_img];
 var new_key=i;
-var inner__html='<img src=' + image_name + '.jpg style="width:' + start_lambda_size + ';height:' + start_lambda_size + '; background-color: ' + start_lambda_background_color + ';"/>'
+var inner__html='<img src=' + image_name + ' style="width:' + start_lambda_size + ';height:' + start_lambda_size + '; background-color: ' + start_lambda_background_color + ';"/>'
 var image=inner__html;
 inner_html[new_key]=image;
 }
@@ -176,7 +176,7 @@ new_lambda_size=new_lambda_size + "px";}
 else{
 new_lambda_size=lambda_size;
 new_lambda_size.toString(10);}
-inner_html[id]='<img ' + image_name + '.jpg style="width:' + new_lambda_size + ';height:' + new_lambda_size + '; background-color: ' + new_lambda_background_color + ';"/>'
+inner_html[id]='<img ' + image_name + ' style="width:' + new_lambda_size + ';height:' + new_lambda_size + '; background-color: ' + new_lambda_background_color + ';"/>'
 var temp = inner_html;
 var base = document.getElementById("base");
 base.innerHTML="";
