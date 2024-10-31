@@ -1,4 +1,4 @@
-const f_generate_display_engine = (images_list,div_base_id) => {
+const f_generate_display_engine = (images_list,div_base_id,use_default) => {
 const link_page_copyright=`
 Copyright (c) 2018 Michael Neill Hartman. All rights reserved.
 mnh_license@proton.me
@@ -7,16 +7,7 @@ https://github.com/hartmanm
 var base = document.getElementById("base");
 var inner_html = {}
 var image_selector=[]
-let use_default=true;
-if(use_default){
-for(var key of images_list){
-const contains_png = key.includes("png");
-const contains_jp = key.includes("jp");
-const contains_xyz=(contains_png || contains_jp);
-if(key != ""){if(contains_xyz){image_selector.push(key);console.log(key);}}};
-console.log(base.innerHTML);
-reload();
-}
+let use_default_triggered=false;
 function execute_z(){
 var temp = inner_html;
 var base = document.getElementById(div_base_id);
@@ -201,5 +192,15 @@ lamdalink.addEventListener("mouseleave", function(e){var target = e.target || e.
 lamdalink.addEventListener("click", function(e){var target = e.target || e.srcElement; execute_z(id)}, false);
 }
 lamda_gen("init");
+}
+if(use_default && not use_default_triggered){
+use_default_triggered=true;
+for(var key of images_list){
+const contains_png = key.includes("png");
+const contains_jp = key.includes("jp");
+const contains_xyz=(contains_png || contains_jp);
+if(key != ""){if(contains_xyz){image_selector.push(key);console.log(key);}}};
+console.log(base.innerHTML);
+reload();
 }
 }
