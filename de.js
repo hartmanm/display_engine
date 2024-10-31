@@ -7,7 +7,7 @@ https://github.com/hartmanm
 var base = document.getElementById("base");
 var inner_html = {}
 var image_selector=[]
-let use_default_triggered=false;
+var use_default_triggered=false;
 function execute_z(){
 var temp = inner_html;
 var base = document.getElementById(div_base_id);
