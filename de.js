@@ -236,7 +236,7 @@ var here = image_name_inner_html.indexOf("width:");
 var there = image_name_inner_html.indexOf(";height");
 var new_lambda_size = image_name_inner_html.slice(here,there);
 new_lambda_size=parseInt(new_lambda_size.slice(6,-2));
-if(new_lambda_size*2 < 400){
+if(new_lambda_size*2 < 500){
 new_lambda_size=new_lambda_size*2;
 new_lambda_size.toString(10);
 new_lambda_size=new_lambda_size + "px";
