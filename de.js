@@ -149,7 +149,7 @@ for(var i=0;i<length;i++){result+=characters.charAt(Math.floor(Math.random()*cha
 return result;
 }
 // HARDCODE
-total_grid_squares=1225
+total_grid_squares=400
 for(var i=0;i<total_grid_squares;i++){
 var new_img=i;
 var start_lambda_background_color=lambda_background_color;
@@ -165,6 +165,8 @@ const contains_error=(contains_cons || contains_undefined);
 var image_name=image_selector[new_img];
 var inner__html='<img src=' + image_name + ' style="width:' + start_lambda_size + ';height:' + start_lambda_size + '; background-color: ' + start_lambda_background_color + ';"/>'
 }
+if(image_selector[new_img] === undefined){
+var inner__html='<img src=' + 'https://hartmanm.github.io/static/pavo_td/path.png' + ' style="width:' + start_lambda_size + ';height:' + start_lambda_size + '; background-color: ' + start_lambda_background_color + ';"/>'
 }
 var new_key=i;
 var image=inner__html;
