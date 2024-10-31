@@ -1,17 +1,9 @@
-const link_page_config_copyright=`
-Copyright (c) 2018 Michael Neill Hartman. All rights reserved.
-mnh_license@proton.me
-https://github.com/hartmanm
-`
+
 const images_list = [
-'',
 'https://hartmanm.github.io/static/project_timeline/hartmanm_avatar.png',
-  
 'https://hartmanm.github.io/static/data_aggregator/instock.png',
 'https://hartmanm.github.io/static/data_aggregator/outofstock.png',
-  
 'https://hartmanm.github.io/static/electric_cost_calculator/ecc.png',
-
 'https://hartmanm.github.io/static/overlord/win10guide/w1.png',
 'https://hartmanm.github.io/static/overlord/win10guide/w2.png',
 'https://hartmanm.github.io/static/overlord/win10guide/w3.png',
@@ -39,7 +31,6 @@ const images_list = [
 'https://hartmanm.github.io/static/overlord/win10guide/w26.png',
 'https://hartmanm.github.io/static/overlord/win10guide/w27.png',
 'https://hartmanm.github.io/static/overlord/win10guide/w28.png',
-
 'https://hartmanm.github.io/static/pavo_td/arrow.png',
 'https://hartmanm.github.io/static/pavo_td/arrow1.png',
 'https://hartmanm.github.io/static/pavo_td/arrow3large.png',
@@ -54,9 +45,7 @@ const images_list = [
 'https://hartmanm.github.io/static/pavo_td/nonPath.png',
 'https://hartmanm.github.io/static/pavo_td/path.png',
 'https://hartmanm.github.io/static/pavo_td/sheep_walk.png',
-
 'https://hartmanm.github.io/static/project_timeline/hartmanm_avatar.png',
-
 'https://hartmanm.github.io/static/resume_site/d3_road_deaths.png',
 'https://hartmanm.github.io/static/resume_site/hs_server.png',
 'https://hartmanm.github.io/static/resume_site/link_page.png',
@@ -67,5 +56,11 @@ const images_list = [
 'https://hartmanm.github.io/static/resume_site/openrig.png',
 'https://hartmanm.github.io/static/resume_site/polar.png',
 'https://hartmanm.github.io/static/resume_site/riglist.png',
-'https://hartmanm.github.io/static/resume_site/wasm_go.png'
+'https://hartmanm.github.io/static/resume_site/wasm_go.png',
 ]
+
+const link_page_config_copyright=`
+Copyright (c) 2018 Michael Neill Hartman. All rights reserved.
+mnh_license@proton.me
+https://github.com/hartmanm
+`
