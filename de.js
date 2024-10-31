@@ -204,8 +204,12 @@ console.log("--------------------");
 console.log("execute_z: " + id);
 var new_lambda_background_color = "#4E2F98"; //#0F6640 green //#660F35 red // #4E2F98 purple
 var image_name_inner_html=inner_html[id];
+const contains_png = key.includes(".png");
+const contains_jp = key.includes(".jp");
 var here = image_name_inner_html.indexOf("src=");
-var there = image_name_inner_html.indexOf(".jpg");
+var there=here;
+if(contains_jp){there=image_name_inner_html.indexOf(".jpg");}
+if(contains_png){there=image_name_inner_html.indexOf(".png");}
 var image_name = image_name_inner_html.slice(here,there);
 var here = image_name_inner_html.indexOf("width:");
 var there = image_name_inner_html.indexOf(";height");
