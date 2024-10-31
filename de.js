@@ -7,9 +7,10 @@ https://github.com/hartmanm
 var base = document.getElementById("base");
 var inner_html = {}
 var image_selector=[]
+image_selector=images_list;
 function execute_z(){
 var temp = inner_html;
-var base = document.getElementById("base");
+var base = document.getElementById(div_base_id);
 base.innerHTML="";
 inner_html={}
 inner_html=temp;
