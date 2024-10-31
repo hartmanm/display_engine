@@ -149,7 +149,8 @@ for(var i=0;i<length;i++){result+=characters.charAt(Math.floor(Math.random()*cha
 return result;
 }
 // HARDCODE
-total_grid_squares=400
+//total_grid_squares=400
+total_grid_squares=image_selector.length;
 for(var i=0;i<total_grid_squares;i++){
 var new_img=i;
 var start_lambda_background_color=lambda_background_color;
