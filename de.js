@@ -7,7 +7,16 @@ https://github.com/hartmanm
 var base = document.getElementById("base");
 var inner_html = {}
 var image_selector=[]
-image_selector=images_list;
+let use_default=true;
+if(use_default){
+for(var key of images_list){
+const contains_png = key.includes("png");
+const contains_jp = key.includes("jp");
+const contains_xyz=(contains_png || contains_jp);
+if(key != ""){if(contains_xyz){image_selector.push(key);console.log(key);}}};
+console.log(base.innerHTML);
+reload();
+}
 function execute_z(){
 var temp = inner_html;
 var base = document.getElementById(div_base_id);
