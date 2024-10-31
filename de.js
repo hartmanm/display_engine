@@ -14,6 +14,37 @@ base.innerHTML="";
 inner_html={}
 inner_html=temp;
 }
+  /*
+if(use_default){
+for(var key of images_list){
+const contains_png = key.includes("png");
+const contains_jp = key.includes("jp");
+const contains_xyz=(contains_png || contains_jp);
+if(key != ""){if(contains_xyz){image_selector.push(key);console.log(key);}}};
+console.log(base.innerHTML);
+reload();
+}
+*/
+var fileInput = images_list,
+readFileD = function () {
+var reader = new FileReader();
+reader.onload = function () {
+var temp = reader.result.split(',');
+image_selector=[]
+inner_html = {}
+execute_z();
+for(var key of temp){
+const contains_png = key.includes("png");
+const contains_jp = key.includes("jp");
+const contains_xyz=(contains_png || contains_jp);
+if(key != ""){if(contains_xyz){image_selector.push(key);console.log(key);}}};
+console.log(base.innerHTML);
+reload();
+};
+reader.readAsBinaryString(fileInput_config.files[0]);
+};
+fileInput_config.addEventListener('change', readFileD);
+
 var fileInput = document.getElementById("csv"),
 readFile = function () {
 var reader = new FileReader();
@@ -35,6 +66,7 @@ reload();
 reader.readAsBinaryString(fileInput.files[0]);
 };
 fileInput.addEventListener('change', readFile);
+
 var fileInput_json = document.getElementById("json"),
 readFile2 = function () {
 var reader = new FileReader();
@@ -57,6 +89,7 @@ reload();
 reader.readAsBinaryString(fileInput_json.files[0]);
 };
 fileInput_json.addEventListener('change', readFile2);
+
 function reload(){
 var lambda_background_color="#7F9AB7"; //brown #B79C7F //grey #7F9AB7
 var screen_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
@@ -191,14 +224,5 @@ lamdalink.addEventListener("mouseleave", function(e){var target = e.target || e.
 lamdalink.addEventListener("click", function(e){var target = e.target || e.srcElement; execute_z(id)}, false);
 }
 lamda_gen("init");
-}
-if(use_default){
-for(var key of images_list){
-const contains_png = key.includes("png");
-const contains_jp = key.includes("jp");
-const contains_xyz=(contains_png || contains_jp);
-if(key != ""){if(contains_xyz){image_selector.push(key);console.log(key);}}};
-console.log(base.innerHTML);
-reload();
 }
 }
