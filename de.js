@@ -4,6 +4,7 @@ Copyright (c) 2018 Michael Neill Hartman. All rights reserved.
 mnh_license@proton.me
 https://github.com/hartmanm
 `;
+const max_lambda_size=650
 var base = document.getElementById("base");
 var inner_html = {}
 var image_selector=[]
@@ -222,7 +223,7 @@ var here = image_name_inner_html.indexOf("width:");
 var there = image_name_inner_html.indexOf(";height");
 var new_lambda_size = image_name_inner_html.slice(here,there);
 new_lambda_size=parseInt(new_lambda_size.slice(6,-2));
-if(new_lambda_size*2 < 500){
+if(new_lambda_size*2 < max_lambda_size){
 new_lambda_size=new_lambda_size*2;
 new_lambda_size.toString(10);
 new_lambda_size=new_lambda_size + "px";
