@@ -20,11 +20,11 @@ image_selector=[]
 inner_html = {}
 execute_z();
 for(var key of images_list){
-const contains_png = key.includes(".png");
-const contains_jp = key.includes(".jp");
+const contains_png = jsonobj[key].includes(".png");
+const contains_jp = jsonobj[key].includes(".jp");
 const contains_xyz=(contains_png || contains_jp);
-const contains_cons = key.includes("cons");
-const contains_undefined = key.includes("undefined");
+const contains_cons = jsonobj[key].includes("cons");
+const contains_undefined = jsonobj[key].includes("undefined");
 const contains_error=(contains_cons || contains_undefined);
 if(key != ""){if(contains_xyz && !contains_error){image_selector.push(key);console.log(key);}}};
 console.log(base.innerHTML);
